@@ -1,0 +1,9 @@
+[
+  { username: 'invalid@open.com', password: 'wrong123' },
+  { username: '', password: 'pw123' },
+  { username: 'PW_QA@nal.com', password: '' }
+]
+3
+User credentials : invalid@open.com - wrong123
+User credentials :  - pw123
+User credentials : PW_QA@nal.com - 

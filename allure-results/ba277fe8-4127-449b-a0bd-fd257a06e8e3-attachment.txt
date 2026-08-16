@@ -1,0 +1,72 @@
+[
+  {
+    id: 8566506,
+    name: 'PW Test Automation User',
+    email: 'PWTEST1785765101147@gmail.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8566505,
+    name: 'PW Test User',
+    email: 'PWTEST1785765014438@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8566502,
+    name: 'PW Test User',
+    email: 'PWTEST1785764742051@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8566500,
+    name: 'PW Test User',
+    email: 'PWTEST1785764500923@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8566498,
+    name: 'PW Test User',
+    email: 'PWTEST1785764390529@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8566477,
+    name: 'PW Test User',
+    email: 'PWTEST1785763507806@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8564923,
+    name: 'Kiran Joshi',
+    email: 'joshi_kiran@spinka.example',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8564922,
+    name: 'Kannen Pilla DC',
+    email: 'kannen_pilla_dc@rolfson.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8564921,
+    name: 'Agrata Mukhopadhyay',
+    email: 'mukhopadhyay_agrata@effertz.example',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8564920,
+    name: 'Gita Bharadwaj',
+    email: 'bharadwaj_gita@lockman-davis.example',
+    gender: 'female',
+    status: 'active'
+  }
+]

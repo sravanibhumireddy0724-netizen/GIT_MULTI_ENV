@@ -1,0 +1,72 @@
+[
+  {
+    id: 8563754,
+    name: 'PW Test User',
+    email: 'pwtest1785500578251@mail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8563265,
+    name: 'Ganesh Iyengar',
+    email: 'iyengar_ganesh@okon-schneider.test',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8563264,
+    name: 'Mohinder Kaul',
+    email: 'kaul_mohinder@leannon-dickens.test',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8563261,
+    name: 'Sen. Daksha Agarwal',
+    email: 'agarwal_sen_daksha@rutherford.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8563260,
+    name: 'Chaturbhuj Namboothiri',
+    email: 'chaturbhuj_namboothiri@rodriguez.example',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8563054,
+    name: 'Dron Pillai',
+    email: 'pillai_dron@hoeger.example',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8563053,
+    name: 'Mr. Menka Shukla',
+    email: 'shukla_mr_menka@stehr.example',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8563052,
+    name: 'Samir Jha',
+    email: 'samir_jha@moen.test',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8563051,
+    name: 'Trilochana Patil',
+    email: 'trilochana_patil@erdman.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8563050,
+    name: 'Gangesh Ganaka',
+    email: 'gangesh_ganaka@rath.example',
+    gender: 'female',
+    status: 'active'
+  }
+]

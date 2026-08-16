@@ -1,0 +1,25 @@
+==================POST CALL================
+{
+  id: 8566505,
+  name: 'PW Test User',
+  email: 'PWTEST1785765014438@gmail.com',
+  gender: 'female',
+  status: 'active'
+}
+Created USER ID : 8566505
+==================GET CALL================
+{
+  id: 8566505,
+  name: 'PW Test User',
+  email: 'PWTEST1785765014438@gmail.com',
+  gender: 'female',
+  status: 'active'
+}
+==================UPDATE CALL================
+{
+  id: 8566505,
+  name: 'PW Test User',
+  email: 'PWTEST1785765014438@gmail.com',
+  gender: 'female',
+  status: 'active'
+}

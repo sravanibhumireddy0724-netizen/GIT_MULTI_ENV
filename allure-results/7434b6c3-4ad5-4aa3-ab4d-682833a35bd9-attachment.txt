@@ -1,0 +1,7 @@
+{
+  id: 8563051,
+  name: 'Trilochana Patil',
+  email: 'trilochana_patil@erdman.test',
+  gender: 'male',
+  status: 'active'
+}

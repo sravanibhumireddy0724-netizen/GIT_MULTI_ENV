@@ -1,0 +1,8 @@
+==================POST CALL================
+{
+  id: 8566498,
+  name: 'PW Test User',
+  email: 'PWTEST1785764390529@gmail.com',
+  gender: 'female',
+  status: 'active'
+}
