@@ -14,7 +14,7 @@ export class BasePage {
     protected readonly cartButton: Locator;
     protected readonly contactUs:Locator
 
-    constructor(page: Page) {
+    constructor(page: Page) { //Bas Page constructors
         this.page = page;
         this.logo = page.getByAltText('naveenopencart');
         this.searchBox = page.getByPlaceholder('Search');
