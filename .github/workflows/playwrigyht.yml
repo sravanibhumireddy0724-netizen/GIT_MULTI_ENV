@@ -1,7 +1,11 @@
 name: Playwright Multi Environment Tests
 
 on:
+  schedule:
+    - cron: '50 18 * * *'
+
   workflow_dispatch:
+
 
 jobs:
 
