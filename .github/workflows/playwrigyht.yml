@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        environment: [qa, stage]
+        environment: [qa, stag]
 
     runs-on: ubuntu-latest
 
@@ -53,5 +53,5 @@ jobs:
         uses: actions/upload-artifact@v5
         with:
           name: playwright-report-${{ matrix.environment }}
-          path: playwright-report/
+          path: reports/html-report/
           retention-days: 30
