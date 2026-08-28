@@ -1,31 +1,23 @@
-name: Playwright Tests
+name: Playwright Multi Environment Tests
 
 on:
-
   workflow_dispatch:
-    inputs:
-
-      environment:
-        description: "Select environment"
-        required: true
-        default: "qa"
-        type: choice
-        options:
-          - qa
-          - stage
-          - dev
-
 
 jobs:
 
   test:
 
+    strategy:
+      matrix:
+        environment: [qa, stage]
+
     runs-on: ubuntu-latest
 
-    environment: ${{ github.event.inputs.environment }}
+    environment: ${{ matrix.environment }}
 
     env:
-      ENV: ${{ github.event.inputs.environment }}
+      ENV: ${{ matrix.environment }}
+
       BASE_URL: ${{ vars.BASE_URL }}
 
       APP_USERNAME: ${{ secrets.APP_USERNAME }}
@@ -48,21 +40,18 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Display environment
-        run: |
-          echo "Environment: ${{ github.event.inputs.environment }}"
-          echo "Base URL: $BASE_URL"
       - name: Show selected environment
         run: |
-         echo "Selected environment: ${{ github.event.inputs.environment }}"
-         echo "Base URL: $BASE_URL"   
+          echo "Running on environment: $ENV"
+          echo "Base URL: $BASE_URL"
 
       - name: Run Playwright tests
         run: npx playwright test
 
-      - name: Upload report
+      - name: Upload Playwright Report
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v5
         with:
-          name: playwright-report-${{ github.event.inputs.environment }}
+          name: playwright-report-${{ matrix.environment }}
           path: playwright-report/
+          retention-days: 30
