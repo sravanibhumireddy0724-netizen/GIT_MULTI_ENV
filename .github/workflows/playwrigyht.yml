@@ -2,7 +2,8 @@ name: Playwright Multi Environment Tests
 
 on:
   schedule:
-    - cron: '10 19 * * *'
+    - cron: '17 1 * * *'
+      timezone: 'Asia/Kolkata'
 
   workflow_dispatch:
 
