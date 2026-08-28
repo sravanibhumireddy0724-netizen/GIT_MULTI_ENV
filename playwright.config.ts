@@ -19,7 +19,7 @@ export default defineConfig({
   workers: process.env.CI ? 2 : undefined,
 
   reporter: process.env.CI
-    ? [
+    ? [['list'],
       ["blob"],
       ["html", { outputFolder: "reports/html-report", open: "never" }],
       ["allure-playwright", { outputFolder: "allure-results", suiteTitle: true }],

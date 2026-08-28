@@ -51,6 +51,10 @@ jobs:
         run: |
           echo "Environment: ${{ github.event.inputs.environment }}"
           echo "Base URL: $BASE_URL"
+      - name: Show selected environment
+        run: |
+         echo "Selected environment: ${{ github.event.inputs.environment }}"
+         echo "Base URL: $BASE_URL"   
 
       - name: Run Playwright tests
         run: npx playwright test
