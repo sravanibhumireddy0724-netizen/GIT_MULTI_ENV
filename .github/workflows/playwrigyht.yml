@@ -25,6 +25,7 @@ jobs:
     environment: ${{ github.event.inputs.environment }}
 
     env:
+      ENV: ${{ github.event.inputs.environment }}
       BASE_URL: ${{ vars.BASE_URL }}
 
       APP_USERNAME: ${{ secrets.APP_USERNAME }}
