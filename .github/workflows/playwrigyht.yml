@@ -54,8 +54,16 @@ jobs:
           echo "Running on environment: $ENV"
           echo "Base URL: $BASE_URL"
 
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Run Smoke Tests on PR
+        if: github.event_name == 'pull_request'
+        run: npx playwright test --grep "@smoke"
+      
+      - name: Run Smoke Tests on Schedule
+        if: github.event_name == 'schedule'
+        run: npx playwright test --grep "@regression"    
+      - name: Run Smoke Tests on Run Tests Manually
+        if: github.event_name == 'workflow_dispatch'
+        run: npx playwright test 
 
       - name: Upload Playwright Report
         if: ${{ !cancelled() }}
